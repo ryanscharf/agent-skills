@@ -1,0 +1,25 @@
+name: validate
+on:
+  push:
+  pull_request:
+  release:
+    types: [published]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/validate.sh
+  # On a GitHub release, attach one zip per skill (for uploading to claude.ai)
+  zips:
+    if: github.event_name == 'release'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir dist
+          for d in skills/*/; do n=$(basename "$d"); (cd skills && zip -qr "../dist/$n.zip" "$n"); done
+      - env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh release upload "${{ github.event.release.tag_name }}" dist/*.zip --clobber

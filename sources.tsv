@@ -1,0 +1,85 @@
+# repo<TAB>ref<TAB>path-in-repo<TAB>skill-name<TAB>flags
+# flags: local = no upstream license, synced but gitignored (not redistributed)
+#        fix-skillmd = upstream file is lowercase skill.md; renamed on sync
+#        patch-review-r = bundle upstream rule/agent files so the skill works outside its home repo
+# Comment out any line to drop that skill. Run scripts/sync.sh after editing.
+
+## ---- awesome-rstats-skills: individual skills ----
+pedrohcgs/claude-code-my-workflow	ae726177e23426b665e0a1eef5fb5bd83bd5b831	.claude/skills/review-r	review-r	patch-review-r
+nealcaren/social-data-analysis	dda68b6cb9e324b2035c7da0f24c8e66d5863fb1	plugins/r-analyst/skills/r-analyst	r-analyst	
+chendakeng/claude-code-skill-ds-assistant	91f316f761df419fe7b582f81bc6827e7d4cb013	skills/ds-assistant	ds-assistant	
+dariia-m/my_claude_skills	8a32ebf8e0ae5a7930621ea561055875d75533cb	event-studies	event-study	fix-skillmd
+iremaydas/base-r-skill	061f27eed98730aed08a112a08e8b0d119160054	.	base-r	
+statzhero/tidy-r-skill	114967ca9ca0fb9303464826fecf9f33a5406dce	.	tidy-r	
+CoryMcCartan/agent-skills	764e959343e182ed0dc110894b0615e18556ab10	cran-submit	cran-submit	local
+statzhero/targets-r-skill	76fcb4a39006bffd41cce71ab61d21fbc8ee0189	.	targets-r	
+
+## ---- collection: ab604/claude-code-r-skills ----
+ab604/claude-code-r-skills	529de4fcfe68fcc7c30cc56388bb625e8ddf37f0	.claude/skills/r-bayes	r-bayes	
+ab604/claude-code-r-skills	529de4fcfe68fcc7c30cc56388bb625e8ddf37f0	.claude/skills/r-oop	r-oop	
+ab604/claude-code-r-skills	529de4fcfe68fcc7c30cc56388bb625e8ddf37f0	.claude/skills/r-package-development	r-package-development-ab604	
+ab604/claude-code-r-skills	529de4fcfe68fcc7c30cc56388bb625e8ddf37f0	.claude/skills/r-performance	r-performance	
+ab604/claude-code-r-skills	529de4fcfe68fcc7c30cc56388bb625e8ddf37f0	.claude/skills/r-style-guide	r-style-guide	
+ab604/claude-code-r-skills	529de4fcfe68fcc7c30cc56388bb625e8ddf37f0	.claude/skills/rlang-patterns	rlang-patterns	
+ab604/claude-code-r-skills	529de4fcfe68fcc7c30cc56388bb625e8ddf37f0	.claude/skills/tdd-workflow	tdd-workflow	
+ab604/claude-code-r-skills	529de4fcfe68fcc7c30cc56388bb625e8ddf37f0	.claude/skills/tidyverse-patterns	tidyverse-patterns	
+
+## ---- collection: posit-dev/skills ----
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	alt-text	alt-text	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	brand-yml	brand-yml	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	connect/deploy-to-connect	deploy-to-connect	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	ggsql/ggsql	ggsql	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	github/pr-create	pr-create	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	github/pr-threads-address	pr-threads-address	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	github/pr-threads-resolve	pr-threads-resolve	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	open-source/create-release-checklist	create-release-checklist	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	open-source/maintainer-decline	maintainer-decline	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	open-source/release-post	release-post	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	posit-dev/critical-code-reviewer	critical-code-reviewer	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	posit-dev/describe-design	describe-design	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	posit-dev/implement	implement	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	posit-dev/new-work	new-work	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	posit-dev/review-testing	review-testing	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	posit-dev/working-on	working-on	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	quarto/quarto-authoring	quarto-authoring	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	r-lib/cli	cli	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	r-lib/cran-extrachecks	cran-extrachecks	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	r-lib/lifecycle	lifecycle	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	r-lib/mirai	mirai	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	r-lib/r-cli-app	r-cli-app	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	r-lib/r-cran-status	r-cran-status	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	r-lib/r-package-development	r-package-development	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	r-lib/testing-r-packages	testing-r-packages	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	shiny/shiny-bslib-theming	shiny-bslib-theming	
+posit-dev/skills	1bb49b8eecba38f04d39c2e6ddb8f8871382fe72	shiny/shiny-bslib	shiny-bslib	
+
+## ---- collection: jeremy-allen/claude-skills (no license file; used with author's OK) ----
+jeremy-allen/claude-skills	f3a6573966bae0e239f5250592035f6064bd69a4	customizing-vectors-r	customizing-vectors-r	
+jeremy-allen/claude-skills	f3a6573966bae0e239f5250592035f6064bd69a4	deliver-posit-news	deliver-posit-news	
+jeremy-allen/claude-skills	f3a6573966bae0e239f5250592035f6064bd69a4	designing-oop-r	designing-oop-r	
+jeremy-allen/claude-skills	f3a6573966bae0e239f5250592035f6064bd69a4	developing-packages-r	developing-packages-r	
+jeremy-allen/claude-skills	f3a6573966bae0e239f5250592035f6064bd69a4	metaprogramming-rlang	metaprogramming-rlang	
+jeremy-allen/claude-skills	f3a6573966bae0e239f5250592035f6064bd69a4	optimizing-r	optimizing-r	
+jeremy-allen/claude-skills	f3a6573966bae0e239f5250592035f6064bd69a4	writing-tidyverse-r	writing-tidyverse-r	
+
+## ---- Rust ----
+apollographql/skills	855a8ad48abd30da337edb6930481f7e64685c90	skills/rust-best-practices	rust-best-practices	
+wshobson/agents	46891e7e60da0e52baf1050b7b6391b64e84c6d9	plugins/systems-programming/skills/rust-async-patterns	rust-async-patterns	
+# leonardomso/rust-skills	fd2a861ab0406a4ac536a55274d14ea6fd1ca9c9	.	rust-skills	
+
+## ---- PostgreSQL ----
+supabase/agent-skills	c9be0e931b7930f7d02126d04774d904c381e7d7	skills/supabase-postgres-best-practices	supabase-postgres-best-practices	
+wshobson/agents	46891e7e60da0e52baf1050b7b6391b64e84c6d9	plugins/database-design/skills/postgresql-table-design	postgresql-table-design	
+github/awesome-copilot	143a3d976b3c1603cc8932984d5e1f28501cb5fc	skills/postgresql-code-review	postgresql-code-review	
+
+## ---- SQL Server / general SQL (see also skills/tsql-conventions, maintained in this repo) ----
+github/awesome-copilot	143a3d976b3c1603cc8932984d5e1f28501cb5fc	skills/sql-code-review	sql-code-review	
+github/awesome-copilot	143a3d976b3c1603cc8932984d5e1f28501cb5fc	skills/sql-optimization	sql-optimization	
+github/awesome-copilot	143a3d976b3c1603cc8932984d5e1f28501cb5fc	skills/sql-object-impact-analysis	sql-object-impact-analysis	
+github/awesome-copilot	143a3d976b3c1603cc8932984d5e1f28501cb5fc	skills/sql-server-table-reconciliation	sql-server-table-reconciliation	
+
+## ---- Docker (official) ----
+docker/skills	f79172733725e2fd236343ee7b963c446ed85d09	skills/docker-build-strategies	docker-build-strategies	
+docker/skills	f79172733725e2fd236343ee7b963c446ed85d09	skills/docker-compose-patterns	docker-compose-patterns	
+docker/skills	f79172733725e2fd236343ee7b963c446ed85d09	skills/docker-project-foundations	docker-project-foundations	
+docker/skills	f79172733725e2fd236343ee7b963c446ed85d09	skills/docker-destructive-guardrails	docker-destructive-guardrails	

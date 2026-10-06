@@ -1,0 +1,3 @@
+Source: https://github.com/github/awesome-copilot/tree/143a3d976b3c1603cc8932984d5e1f28501cb5fc/skills/sql-server-table-reconciliation
+License: LICENSE
+Synced by scripts/sync.sh; local edits here are overwritten. Change sources.tsv instead.
